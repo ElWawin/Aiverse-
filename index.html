@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI.verse</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>AI.verse</h1>
+      <select id="model-select">
+        <option value="gpt-3.5-turbo">GPT-3.5</option>
+        <option value="gpt-4">GPT-4</option>
+      </select>
+    </header>
+    <div id="chat-box"></div>
+    <div id="input-area">
+      <button id="voice-btn">🎤</button>
+      <input type="text" id="user-input" placeholder="Escribe tu idea..."/>
+      <button onclick="sendMessage()">Enviar</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
